@@ -1,0 +1,810 @@
+{
+  "schema_version": 1,
+  "terms": [
+    {
+      "id": "prototype",
+      "label": "Prototype",
+      "aliases": [
+        "Proof of concept"
+      ],
+      "category": "maturity",
+      "definition": "An implementation used to test feasibility or an idea.",
+      "caveat": "It may be disposable and is not necessarily a published release.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "pre-alpha",
+      "label": "Pre-Alpha",
+      "aliases": [],
+      "category": "maturity",
+      "definition": "Early development before the project considers itself ready for alpha testing.",
+      "caveat": "There is no cross-project entry or exit criterion.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "experimental",
+      "label": "Experimental",
+      "aliases": [],
+      "category": "maturity",
+      "definition": "A feature or build offered for experimentation without a stable commitment.",
+      "caveat": "This can describe a single feature inside an otherwise stable product.",
+      "source_ids": [
+        "kubernetes"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "alpha",
+      "label": "Alpha",
+      "aliases": [],
+      "category": "maturity",
+      "definition": "An early testing stage with incomplete or changing behavior.",
+      "caveat": "Feature completeness and support guarantees are project-defined.",
+      "source_ids": [
+        "nuget"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "beta",
+      "label": "Beta",
+      "aliases": [],
+      "category": "maturity",
+      "definition": "A prerelease stage intended to collect feedback and identify defects.",
+      "caveat": "Feature completeness and production eligibility require a product policy.",
+      "source_ids": [
+        "nuget"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "preview",
+      "label": "Preview",
+      "aliases": [],
+      "category": "maturity",
+      "definition": "An umbrella label for functionality available before its intended general release.",
+      "caveat": "Preview is not a standardized position between alpha and beta.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "developer-preview",
+      "label": "Developer Preview",
+      "aliases": [
+        "Dev Preview"
+      ],
+      "category": "maturity",
+      "definition": "An advance release aimed at developers evaluating APIs or integrations.",
+      "caveat": "It does not by itself promise API compatibility.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "technical-preview",
+      "label": "Technical Preview",
+      "aliases": [
+        "Tech Preview"
+      ],
+      "category": "maturity",
+      "definition": "An advance technology evaluation made available before a final offering.",
+      "caveat": "Availability does not imply a production-support commitment.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "release-candidate",
+      "label": "Release Candidate",
+      "aliases": [
+        "RC"
+      ],
+      "category": "maturity",
+      "definition": "A build proposed as the final release if acceptance checks reveal no blocking issues.",
+      "caveat": "An RC is still a prerelease; production support can have explicit exceptions.",
+      "source_ids": [
+        "nuget"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "beta",
+        "stable",
+        "prerelease"
+      ]
+    },
+    {
+      "id": "stable",
+      "label": "Stable",
+      "aliases": [],
+      "category": "maturity",
+      "definition": "A release or channel the project considers suitable for its normal supported use.",
+      "caveat": "Stable is a project claim, not a guarantee of zero bugs or unchanged behavior.",
+      "source_ids": [
+        "debian"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "final",
+      "label": "Final",
+      "aliases": [
+        "Release"
+      ],
+      "category": "maturity",
+      "definition": "The published outcome of a particular release cycle.",
+      "caveat": "An ordinary word such as release can also mean any published build.",
+      "source_ids": [
+        "nuget"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "ga",
+      "label": "General Availability",
+      "aliases": [
+        "GA"
+      ],
+      "category": "maturity",
+      "definition": "A milestone making a product or feature generally available under its published policy.",
+      "caveat": "Support scope, regions and production eligibility remain vendor-specific.",
+      "source_ids": [
+        "kubernetes"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "public-preview",
+        "stable"
+      ]
+    },
+    {
+      "id": "rtm",
+      "label": "Release to Manufacturing",
+      "aliases": [
+        "RTM"
+      ],
+      "category": "maturity",
+      "definition": "A traditional milestone when a build is handed off for manufacturing or distribution.",
+      "caveat": "It need not share the same date as public availability.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "canary",
+      "label": "Canary",
+      "aliases": [],
+      "category": "channel",
+      "definition": "An early-feedback channel exposing very recent changes to detect problems quickly.",
+      "caveat": "A Canary channel and a canary deployment describe different things.",
+      "source_ids": [
+        "chrome"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "nightly",
+        "unstable",
+        "canary-deployment"
+      ]
+    },
+    {
+      "id": "nightly",
+      "label": "Nightly",
+      "aliases": [],
+      "category": "channel",
+      "definition": "A build or channel produced on a nightly development schedule.",
+      "caveat": "The schedule does not certify maturity, and skipped builds are possible.",
+      "source_ids": [
+        "rust"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "canary",
+        "daily",
+        "snapshot"
+      ]
+    },
+    {
+      "id": "daily",
+      "label": "Daily",
+      "aliases": [],
+      "category": "channel",
+      "definition": "A build produced on a daily schedule, regardless of the time of day.",
+      "caveat": "Cadence alone gives no stability guarantee.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "snapshot",
+      "label": "Snapshot",
+      "aliases": [],
+      "category": "channel",
+      "definition": "A captured state of the code or artifacts at a particular point in development.",
+      "caveat": "Snapshot identifiers and mutability rules vary by ecosystem.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "dev",
+      "label": "Development",
+      "aliases": [
+        "Dev",
+        "Development Channel"
+      ],
+      "category": "channel",
+      "definition": "A channel following active development before broader stabilization.",
+      "caveat": "Its relationship to preview or nightly depends on the project.",
+      "source_ids": [
+        "chrome"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "unstable",
+      "label": "Unstable",
+      "aliases": [],
+      "category": "channel",
+      "definition": "A development stream that accepts changes before stable-release qualification.",
+      "caveat": "The name is not a measured crash rate; Debian has specific usage.",
+      "source_ids": [
+        "debian"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "testing",
+        "stable"
+      ]
+    },
+    {
+      "id": "testing",
+      "label": "Testing",
+      "aliases": [],
+      "category": "channel",
+      "definition": "A stream used to evaluate changes before promotion to a stable release.",
+      "caveat": "Debian Testing is a named distribution, not a generic QA environment.",
+      "source_ids": [
+        "debian"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "edge",
+      "label": "Edge",
+      "aliases": [
+        "Bleeding Edge"
+      ],
+      "category": "channel",
+      "definition": "A label emphasizing access to very recent changes.",
+      "caveat": "It can be a product name or a publisher-defined channel.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "insider",
+      "label": "Insider",
+      "aliases": [],
+      "category": "channel",
+      "definition": "A vendor-branded program offering access to upcoming changes.",
+      "caveat": "A program can contain several channels with different guarantees.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "next",
+      "label": "Next",
+      "aliases": [],
+      "category": "channel",
+      "definition": "A publisher-defined pointer or channel for upcoming work.",
+      "caveat": "A next tag can point at any version the publisher chooses.",
+      "source_ids": [
+        "npm"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "latest",
+      "label": "Latest",
+      "aliases": [],
+      "category": "channel",
+      "definition": "A publisher-controlled pointer to a selected package version.",
+      "caveat": "Do not infer highest version, newest timestamp, or stable from the name.",
+      "source_ids": [
+        "npm"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "next",
+        "stable"
+      ]
+    },
+    {
+      "id": "early-access",
+      "label": "Early Access",
+      "aliases": [
+        "EA"
+      ],
+      "category": "access",
+      "definition": "Access to software or features before their intended general release.",
+      "caveat": "This describes access timing, not a fixed maturity stage.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "private-preview",
+      "label": "Private Preview",
+      "aliases": [],
+      "category": "access",
+      "definition": "An advance offering restricted to selected participants.",
+      "caveat": "Access rules do not establish stability or support.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "public-preview",
+      "label": "Public Preview",
+      "aliases": [],
+      "category": "access",
+      "definition": "An advance offering open to a broad public audience.",
+      "caveat": "Public availability is not equivalent to GA.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "closed-beta",
+      "label": "Closed Beta",
+      "aliases": [],
+      "category": "access",
+      "definition": "A beta restricted to an invited or selected audience.",
+      "caveat": "Closed describes participation, while beta describes the stated stage.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "open-beta",
+      "label": "Open Beta",
+      "aliases": [],
+      "category": "access",
+      "definition": "A beta made available for public participation.",
+      "caveat": "Public participation does not guarantee production readiness.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "lts",
+      "label": "Long Term Support",
+      "aliases": [
+        "LTS"
+      ],
+      "category": "support",
+      "definition": "A release with a provider-defined extended maintenance period.",
+      "caveat": "Duration, patch requirements and covered components vary.",
+      "source_ids": [
+        "dotnet",
+        "ubuntu"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "sts",
+        "esr",
+        "eol"
+      ]
+    },
+    {
+      "id": "sts",
+      "label": "Standard Term Support",
+      "aliases": [
+        "STS"
+      ],
+      "category": "support",
+      "definition": "A standard-duration support track used by products such as .NET.",
+      "caveat": "It is not a lower-quality maturity tier than LTS.",
+      "source_ids": [
+        "dotnet"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "lts"
+      ]
+    },
+    {
+      "id": "esr",
+      "label": "Extended Support Release",
+      "aliases": [
+        "ESR"
+      ],
+      "category": "support",
+      "definition": "A release track designed for a longer maintenance or deployment horizon.",
+      "caveat": "Its actual lifecycle is product-specific.",
+      "source_ids": [
+        "firefox"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "extended-stable",
+      "label": "Extended Stable",
+      "aliases": [],
+      "category": "support",
+      "definition": "A stable track offering a longer interval between some feature updates.",
+      "caveat": "Slower feature cadence does not mean security updates can be ignored.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "interim",
+      "label": "Interim Release",
+      "aliases": [
+        "Interim"
+      ],
+      "category": "support",
+      "definition": "A release between longer-lived releases, commonly with a shorter support window.",
+      "caveat": "Interim can be a fully supported stable release.",
+      "source_ids": [
+        "ubuntu"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "oldstable",
+      "label": "Oldstable",
+      "aliases": [],
+      "category": "support",
+      "definition": "The previous stable release in ecosystems using this label.",
+      "caveat": "The label alone does not establish whether support is still available.",
+      "source_ids": [
+        "debian"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "legacy",
+      "label": "Legacy",
+      "aliases": [],
+      "category": "support",
+      "definition": "An older implementation or release retained for compatibility or migration.",
+      "caveat": "Legacy has no universal support deadline.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "deprecated",
+      "label": "Deprecated",
+      "aliases": [
+        "Deprecation"
+      ],
+      "category": "support",
+      "definition": "A feature, version or practice marked for transition away from continued use.",
+      "caveat": "Deprecated does not necessarily mean already removed or immediately unsupported.",
+      "source_ids": [
+        "lifecycle"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "eol",
+        "legacy"
+      ]
+    },
+    {
+      "id": "eol",
+      "label": "End of Life",
+      "aliases": [
+        "EOL",
+        "End of Support",
+        "EOS"
+      ],
+      "category": "support",
+      "definition": "The end of a provider-defined lifecycle or support period.",
+      "caveat": "EOL and end of support may be separate milestones in a specific policy.",
+      "source_ids": [
+        "lifecycle"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "rolling-release",
+      "label": "Rolling Release",
+      "aliases": [
+        "Rolling"
+      ],
+      "category": "cadence",
+      "definition": "A distribution model evolving through a continuous stream of package updates.",
+      "caveat": "This is separate from rolling deployment and can contain stable packages.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": [
+        "rolling-deployment",
+        "fixed-release"
+      ]
+    },
+    {
+      "id": "fixed-release",
+      "label": "Fixed Release",
+      "aliases": [
+        "Versioned Release"
+      ],
+      "category": "cadence",
+      "definition": "A distribution model organized around discrete named or numbered releases.",
+      "caveat": "Update and maintenance policies still need to be specified.",
+      "source_ids": [
+        "ubuntu"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "release-train",
+      "label": "Release Train",
+      "aliases": [
+        "Train"
+      ],
+      "category": "cadence",
+      "definition": "A recurring schedule in which ready work advances through release stages.",
+      "caveat": "Unready features may wait for a later train.",
+      "source_ids": [
+        "rust"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "point-release",
+      "label": "Point Release",
+      "aliases": [],
+      "category": "change",
+      "definition": "An incremental update within an existing release line.",
+      "caveat": "Some distributions use it for refreshed installation media; it is not always a SemVer patch.",
+      "source_ids": [
+        "ubuntu"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "major",
+      "label": "Major Release",
+      "aliases": [
+        "Major"
+      ],
+      "category": "change",
+      "definition": "Under SemVer, an increment communicating incompatible public API changes.",
+      "caveat": "Other version schemes assign different meanings to major numbers.",
+      "source_ids": [
+        "semver"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "minor",
+      "label": "Minor Release",
+      "aliases": [
+        "Minor"
+      ],
+      "category": "change",
+      "definition": "Under SemVer, an increment for backward-compatible functionality.",
+      "caveat": "The public API contract determines compatibility.",
+      "source_ids": [
+        "semver"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "patch",
+      "label": "Patch Release",
+      "aliases": [
+        "Patch"
+      ],
+      "category": "change",
+      "definition": "Under SemVer, an increment for backward-compatible bug fixes.",
+      "caveat": "A small diff does not prove a change is backward compatible.",
+      "source_ids": [
+        "semver"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "hotfix",
+      "label": "Hotfix",
+      "aliases": [],
+      "category": "change",
+      "definition": "A targeted fix delivered outside or faster than the ordinary release schedule.",
+      "caveat": "Urgency does not waive verification or determine the version increment.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "security-release",
+      "label": "Security Release",
+      "aliases": [
+        "Security Update"
+      ],
+      "category": "change",
+      "definition": "An update intended to address security issues.",
+      "caveat": "It can also be a patch, maintenance release or backport.",
+      "source_ids": [
+        "lifecycle"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "maintenance-release",
+      "label": "Maintenance Release",
+      "aliases": [
+        "Maintenance"
+      ],
+      "category": "change",
+      "definition": "A release focused on sustaining or correcting an existing release line.",
+      "caveat": "Its exact scope can include more than bug fixes.",
+      "source_ids": [
+        "lifecycle"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "service-pack",
+      "label": "Service Pack",
+      "aliases": [
+        "SP"
+      ],
+      "category": "change",
+      "definition": "A packaged collection of updates for a product release.",
+      "caveat": "This is a vendor-specific packaging convention.",
+      "source_ids": [
+        "lifecycle"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "backport",
+      "label": "Backport",
+      "aliases": [],
+      "category": "change",
+      "definition": "A change adapted from a newer development line to an older one.",
+      "caveat": "Backport describes the adaptation, not a maturity stage or complete release.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "prerelease",
+      "label": "Prerelease",
+      "aliases": [
+        "Pre-release"
+      ],
+      "category": "versioning",
+      "definition": "Under SemVer, a version carrying a hyphen-prefixed prerelease identifier.",
+      "caveat": "It has lower precedence than the corresponding normal version.",
+      "source_ids": [
+        "semver"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "build-metadata",
+      "label": "Build Metadata",
+      "aliases": [],
+      "category": "versioning",
+      "definition": "Under SemVer, plus-prefixed metadata attached to a version.",
+      "caveat": "Build metadata does not affect version precedence.",
+      "source_ids": [
+        "semver"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "semver",
+      "label": "Semantic Versioning",
+      "aliases": [
+        "SemVer"
+      ],
+      "category": "versioning",
+      "definition": "A specification relating version numbers to a declared public API.",
+      "caveat": "It does not define Canary, Preview, LTS or deployment strategies.",
+      "source_ids": [
+        "semver"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": [
+        "major",
+        "minor",
+        "patch",
+        "prerelease",
+        "build-metadata"
+      ]
+    },
+    {
+      "id": "canary-deployment",
+      "label": "Canary Deployment",
+      "aliases": [
+        "Canary Rollout"
+      ],
+      "category": "deployment",
+      "definition": "A deployment that initially exposes a new version to a limited audience or traffic share.",
+      "caveat": "It can deploy a stable build and does not define a release channel.",
+      "source_ids": [
+        "aws-canary"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    },
+    {
+      "id": "blue-green",
+      "label": "Blue/Green Deployment",
+      "aliases": [
+        "Blue Green"
+      ],
+      "category": "deployment",
+      "definition": "A deployment approach using separate old and new environments to switch traffic.",
+      "caveat": "Database changes and shared state need their own transition plan.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": []
+    },
+    {
+      "id": "rolling-deployment",
+      "label": "Rolling Deployment",
+      "aliases": [
+        "Rolling Update"
+      ],
+      "category": "deployment",
+      "definition": "A deployment that replaces instances in successive groups.",
+      "caveat": "Old and new versions may run together; this is separate from rolling release.",
+      "source_ids": [],
+      "evidence": "editorial-convention",
+      "related": [
+        "rolling-release",
+        "blue-green"
+      ]
+    },
+    {
+      "id": "feature-flag",
+      "label": "Feature Flag",
+      "aliases": [
+        "Feature Gate"
+      ],
+      "category": "deployment",
+      "definition": "A control allowing selected behavior to be enabled separately from distributing the code.",
+      "caveat": "A flag is not a substitute for compatibility and lifecycle policy.",
+      "source_ids": [
+        "kubernetes"
+      ],
+      "evidence": "editorial-synthesis-with-supporting-example",
+      "related": []
+    }
+  ]
+}

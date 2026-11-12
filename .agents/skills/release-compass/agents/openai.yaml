@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Compass"
+  short_description: "Explain release labels and design release policies"
+  default_prompt: "Use $release-compass to compare release channels and propose a clear release policy for my project."

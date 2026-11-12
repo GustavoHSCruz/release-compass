@@ -1,0 +1,22 @@
+name: Agent integration issue
+description: Report a discovery, installation or agent-behavior problem.
+title: '[Agent] '
+body:
+  - type: input
+    id: client
+    attributes:
+      label: Client, version and operating system
+      description: Include the actual agent client, not just the model name.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps and observed result
+      description: Include discovery path, prompt and sanitized errors. Do not include credentials or private project content.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior and relevant official documentation

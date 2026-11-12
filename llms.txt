@@ -1,0 +1,25 @@
+# Release Compass
+
+> A community reference and portable Agent Skill for software release terminology.
+
+## Start
+
+- [Overview](README.md): purpose, quick start and scope.
+- [Repository instructions](AGENTS.md): guidance for agents working here.
+- [Portable skill](.agents/skills/release-compass/SKILL.md): workflow and selective references.
+- [Catalog](docs/catalog.md): human-readable definitions and caveats.
+- [Agent setup](docs/agents.md): client-specific paths and limitations.
+
+## Structured references
+
+- [Terms](.agents/skills/release-compass/data/terms.json): canonical catalog.
+- [Sources](.agents/skills/release-compass/data/sources.json): primary documentation registry.
+- [Data contract](docs/data.md): fields, evidence scope and lookup semantics.
+
+## Community
+
+- [Contributing](CONTRIBUTING.md): proposed changes and verification.
+- [License](LICENSE): MIT license for original repository content.
+
+Paths are relative to the repository root. This navigation file does not grant
+filesystem access or imply that every agent automatically reads llms.txt.

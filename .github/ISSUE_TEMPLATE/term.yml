@@ -1,0 +1,24 @@
+name: Terminology correction or addition
+description: Propose a clearer definition, caveat or missing release term.
+title: '[Term] '
+body:
+  - type: input
+    id: term
+    attributes:
+      label: Term or existing ID
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and proposed wording
+      description: Explain the ambiguity and the dimension this term describes.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary source and scope
+      description: Link official documentation, or explicitly identify an editorial convention without a verified primary definition.
+    validations:
+      required: true

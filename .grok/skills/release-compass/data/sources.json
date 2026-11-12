@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "last_reviewed": "2026-11-11",
+  "sources": [
+    {
+      "id": "semver",
+      "title": "Semantic Versioning 2.0.0",
+      "url": "https://semver.org/spec/v2.0.0.html",
+      "scope": "Normative version syntax and precedence, not a universal release lifecycle.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "nuget",
+      "title": "NuGet package versioning",
+      "url": "https://learn.microsoft.com/en-us/nuget/concepts/package-versioning",
+      "scope": "Examples of alpha, beta, and release-candidate naming conventions.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "chrome",
+      "title": "Chrome release channels",
+      "url": "https://developer.chrome.com/docs/web-platform/chrome-release-channels",
+      "scope": "Product-specific Canary, Dev, Beta, and Stable channels.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "rust",
+      "title": "How Rust is made and Nightly Rust",
+      "url": "https://doc.rust-lang.org/book/appendix-07-nightly-rust.html",
+      "scope": "Nightly, Beta, Stable and release trains in Rust.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "debian",
+      "title": "Debian releases",
+      "url": "https://www.debian.org/releases/",
+      "scope": "Debian-specific Stable, Testing, Unstable and lifecycle labels.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "dotnet",
+      "title": ".NET support policy",
+      "url": "https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core",
+      "scope": "LTS and STS concern support duration; check live policy for dates.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "firefox",
+      "title": "Firefox release channels",
+      "url": "https://www.mozilla.org/en-US/firefox/channel/desktop/",
+      "scope": "Mozilla product-specific Nightly and Beta examples.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "ubuntu",
+      "title": "Ubuntu release cycle",
+      "url": "https://ubuntu.com/about/release-cycle",
+      "scope": "LTS and interim releases in Ubuntu.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "kubernetes",
+      "title": "Kubernetes feature gates",
+      "url": "https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/",
+      "scope": "Feature-level Alpha, Beta, and GA; not the maturity of the whole cluster.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "npm",
+      "title": "npm distribution tags",
+      "url": "https://docs.npmjs.com/adding-dist-tags-to-packages/",
+      "scope": "Tags such as latest and next are mutable publisher-controlled pointers.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "aws-canary",
+      "title": "Canary deployments on AWS",
+      "url": "https://docs.aws.amazon.com/whitepapers/latest/overview-deployment-options/canary-deployments.html",
+      "scope": "Gradual traffic exposure as a deployment strategy.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "lifecycle",
+      "title": "Microsoft lifecycle terms",
+      "url": "https://learn.microsoft.com/en-us/lifecycle/definitions",
+      "scope": "Product-specific deprecation, support, servicing and retirement terminology.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "agent-skills",
+      "title": "Agent Skills specification",
+      "url": "https://agentskills.io/specification",
+      "scope": "Portable SKILL.md metadata and resource layout.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "claude-skills",
+      "title": "Claude Code skills",
+      "url": "https://code.claude.com/docs/en/skills",
+      "scope": "Claude Code discovery, invocation, and symlink behavior.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "claude-memory",
+      "title": "Claude Code project instructions",
+      "url": "https://code.claude.com/docs/en/memory",
+      "scope": "CLAUDE.md imports and version-dependent AGENTS.md support.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "claude-agents",
+      "title": "Claude Code custom subagents",
+      "url": "https://code.claude.com/docs/en/sub-agents",
+      "scope": "Custom subagent files and tool allowlists.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "codex-skills",
+      "title": "Codex skills",
+      "url": "https://developers.openai.com/codex/skills",
+      "scope": "Local .agents/skills discovery; redirects to current official guidance.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "codex-agents",
+      "title": "Codex AGENTS.md",
+      "url": "https://developers.openai.com/codex/guides/agents-md",
+      "scope": "Repository instruction discovery and precedence.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "gemini-skills",
+      "title": "Gemini CLI skills",
+      "url": "https://geminicli.com/docs/cli/skills/",
+      "scope": "Workspace and user skill discovery, including .agents aliases.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "gemini-context",
+      "title": "Gemini CLI GEMINI.md",
+      "url": "https://geminicli.com/docs/cli/gemini-md/",
+      "scope": "Project context and @file imports.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "grok-skills",
+      "title": "Grok Build skills",
+      "url": "https://docs.x.ai/build/features/skills-plugins-marketplaces",
+      "scope": "Grok Build .grok/skills discovery, distinct from Grok chat or an API model.",
+      "checked_on": "2026-11-11"
+    },
+    {
+      "id": "deepseek-tools",
+      "title": "DeepSeek tool calls",
+      "url": "https://api-docs.deepseek.com/guides/tool_calls/",
+      "scope": "The calling application implements tool execution and context loading.",
+      "checked_on": "2026-11-11"
+    }
+  ]
+}
